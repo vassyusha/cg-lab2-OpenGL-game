@@ -130,10 +130,11 @@ namespace golf_try2
                 else
                 {
                     direction = new Vector3(-(mousePos - mouse.Position)[1], 0.0f, (mousePos - mouse.Position)[0]);
+                    velocity = Vector3.Distance(Vector3.Zero, direction)/200f;
                     direction.Normalize();
                     Matrix3 matrix = Matrix3.CreateRotationY(-45f);
                     direction *= matrix;
-                    velocity += 0.01f;
+                    //velocity += 0.01f;
                 }   
             }
             else if (velocity > 0)

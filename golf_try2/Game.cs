@@ -189,7 +189,7 @@ namespace golf_try2
             shaderProgram = new Shader();
             shaderProgram.LoadShader();
 
-            camera = new Camera(width, height, Vector3.Zero);
+            camera = new Camera(width, height, new Vector3(-1.7217901f, 4.217508f, -1.7217901f));
 
             GL.Enable(EnableCap.DepthTest);
 
